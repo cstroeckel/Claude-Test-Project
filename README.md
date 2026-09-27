@@ -1,9 +1,10 @@
 # Budget-Tracker
 
-Web-App zum Erfassen von Ausgaben und Einnahmen, mit Kategorien, Monatsbudgets und Auswertungen.
+Web-App zum Erfassen von Buchungen (Name, Beschreibung, Datum, Betrag, zusätzliche Kosten)
+mit KPIs für Ausgaben, zusätzliche Kosten und Gesamtkosten pro Monat.
 Die Daten bleiben im Browser (localStorage).
 
-**Stack:** React 19, TypeScript, Vite, Tailwind CSS, React Router, Vitest
+**Stack:** React 19, TypeScript, Vite, Tailwind CSS, React Router, Zustand, Vitest
 
 ## Setup
 
@@ -26,9 +27,7 @@ npm run dev        # http://localhost:5173
 ## Roadmap
 
 - [x] Setup, Routing-Grundgerüst, Tailwind, CI
-- [ ] Datenmodell, Store und Rechenlogik mit Tests
-- [ ] Buchungen erfassen, bearbeiten, löschen
-- [ ] Kategorien und Filter
-- [ ] Dashboard mit Charts
-- [ ] Budgets und Warnungen
+- [x] Buchungen anlegen, bearbeiten, löschen (Formular mit Validierung)
+- [x] KPIs: Ausgaben, zusätzliche Kosten, Gesamtkosten mit Monatsfilter
 - [ ] CSV/JSON-Export und -Import
+- [ ] Charts und Suche

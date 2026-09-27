@@ -17,7 +17,7 @@ export default function Layout() {
               <li key={item.to}>
                 <NavLink
                   to={item.to}
-                  end
+                  end={item.to === '/'}
                   className={({ isActive }) =>
                     isActive
                       ? 'font-medium text-emerald-700'
